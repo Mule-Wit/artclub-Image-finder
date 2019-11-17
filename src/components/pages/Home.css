@@ -1,0 +1,131 @@
+.active-cyan-4 input[type="text"]:focus:not([readonly]) {
+  border: 1px solid #3dd1f6;
+  box-shadow: 0 0 0 1px #53d4e6;
+}
+
+.active-cyan-4 input[type="text"] {
+  border: 1px solid #3da3bd;
+  box-shadow: 0 0 0 1px #3db4c3;
+}
+
+.active-cyan-4 .fa {
+  color: #0c8fa0;
+}
+
+.text-white .close {
+  color: #fff;
+}
+
+.text-white .close:not(:disabled):not(.disabled):focus,
+.close:not(:disabled):not(.disabled):hover {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.75;
+}
+
+.main h1 {
+  position: relative;
+  top: 5rem;
+  margin-bottom: 3rem;
+  color: #fff;
+  text-shadow: 2px 2px 3px rgba(102, 102, 102, 0.596);
+  font-size: 2rem;
+}
+.main {
+  background: linear-gradient(
+    45deg,
+    #f17c58,
+    #e94584,
+    #24aadb,
+    #27dbb1,
+    #ffdc18,
+    #ff3706
+  );
+  background-size: 600% 100%;
+  animation: gradient 10s linear infinite;
+  animation-direction: alternate;
+  text-align: center;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 100%;
+  }
+}
+/* Form */
+
+.search-form button {
+  background: #ffffff;
+  border: none;
+  color: #2ecc71;
+  padding: 0 2rem;
+  cursor: pointer;
+  transition: all 0.8s;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.search-form button:hover {
+  background: #f4f4f4;
+  color: #3333;
+  border: none;
+}
+
+.search-form {
+  display: flex;
+  position: relative;
+  top: 3rem;
+  justify-content: center;
+}
+
+.search-form i {
+  color: #333;
+}
+
+/* Everything in the search form */
+
+.search-form > * {
+  border: 0;
+  padding: 0 0 0 20px;
+  background: #fff;
+  line-height: 50px;
+  font-size: 1rem;
+  border-radius: 0;
+  outline: 0;
+}
+
+input[type="text"] {
+  flex-basis: 600px;
+  box-shadow: var(--box-shadow);
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  width: 100%;
+}
+
+.Photos {
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+
+.Photos img {
+  transition: 1s;
+  padding: 15px;
+  width: 100%;
+  height: auto;
+  display: -webkit-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-self: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+.Photos img:hover {
+  filter: grayscale(100%);
+  transform: scale(1.1);
+}
