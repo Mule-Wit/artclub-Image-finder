@@ -4,12 +4,9 @@ import {
   MDBContainer,
   MDBRow,
   MDBFooter,
-  MDBInput,
+
   MDBIcon,
-  MDBBtn,
-  MDBCard,
-  MDBCardBody,
-  MDBCardImage,
+
   MDBEdgeHeader
 } from "mdbreact";
 
@@ -19,97 +16,85 @@ export default class About extends Component {
       <div>
         <MDBEdgeHeader className="sectionPage gradient-1 " />
 
-        <MDBCol sm="5">
-          <MDBContainer>
-            <MDBCard>
-              <MDBCardImage
-                src={require("../../img/Write.jpg")}
-                alt="MDBCard image cap"
-                top
-                hover
-                overlay="white-slight"
-                className="z-depth-3"
-              />
-              <MDBCardBody>
-                <form name="contact" method="POST" data-netlify="true">
-                  <p className="h5 text-center mb-4">Write To Us</p>
-                  <div className="grey-text">
-                    <MDBInput
-                      label="Your name"
-                      icon="user"
-                      group
-                      type="text"
-                      validate
-                      error="wrong"
-                      success="right"
-                      name="name"
-                      id="name"
-                    />
-                    <MDBInput
-                      label="Your email"
-                      icon="envelope"
-                      group
-                      type="email"
-                      validate
-                      error="wrong"
-                      success="right"
-                      id="email"
-                      name="email"
-                    />
 
-                    <MDBInput
-                      type="textarea"
-                      rows="2"
-                      label="Your message"
-                      name="message"
-                      id="message"
-                      icon="pencil-alt"
-                    />
+        <div class=" profile-card">
+          <div class="mask-shadow"></div>
+          <header>
 
-                    <div data-netlify-recaptcha="true"></div>
-                  </div>
-                  <div className="text-center">
-                    <MDBBtn
-                      type="submit"
-                      value="Send Message"
-                      outline
-                      color="info"
-                    >
-                      Send <MDBIcon icon="paper-plane" className="ml-1" />
-                    </MDBBtn>
-                  </div>
-                </form>
-              </MDBCardBody>
-            </MDBCard>
-          </MDBContainer>
-        </MDBCol>
+
+            <a href="http://wit-blog.herokuapp.com/">
+              <img alt="mule" src="https://en.gravatar.com/userimage/42992842/b8e8ff24d6f1cb84bbe5c839903086bb.png?size=200" />
+            </a>
+
+
+            <h1>Mulugeta</h1>
+
+            <h2>WEB DESIGNER</h2>
+
+          </header>
+
+
+          <div class="profile-bio">
+
+            <p>"The hardest thing when you think about focusing. You think focusing is about saying "Yes." No. Focusing is about saying "No." And when you say "No," you piss off people."</p>
+            <p style={{ fontStyle: "italic" }} >Steve Jobs</p>
+          </div>
+
+
+          <ul class="profile-social-links">
+
+            <li>
+              <a href="https://github.com/Mule-Wit/" target="_blank" rel="noopener noreferrer">
+                <img alt="github" src="https://simpleicons.org/icons/github.svg" />
+              </a>
+            </li>
+
+
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=100015146529072" target="_blank" rel="noopener noreferrer">
+                <img alt="facebook" src="https://simpleicons.org/icons/facebook.svg" />
+              </a>
+            </li>
+
+
+            <li>
+              <a href="https://t.me/Yamnoh" target="_blank" rel="noopener noreferrer">
+                <img alt="telegram" src="https://simpleicons.org/icons/telegram.svg" />
+              </a>
+            </li>
+
+
+
+          </ul>
+
+        </div>
+
         <MDBFooter color="near-moon-gradient" className="font-small pt-5 mt-5">
           <MDBContainer fluid className="text-center text-md-left">
             <MDBRow>
               <MDBCol md="6">
                 <h5 className="title">Dev's</h5>
-                <p></p>
+                <ul>
+                  <li className="list-unstyled mb-2">
+
+                    <a href="http://wit-blog.herokuapp.com/">Wit-blog</a>
+                  </li>
+
+                  <li className="list-unstyled mb-2">
+
+                    <a href="https://acitaphotography.netlify.app/">Acita - Photography</a>
+                  </li>
+                  <li className="list-unstyled mb-2">
+
+                    <a href="https://acita.netlify.app/">Portfolio</a>
+                  </li>
+                </ul>
               </MDBCol>
-              <MDBCol md="6" className="align-items-center">
+              <MDBCol md="6" >
                 <h5 className="title">Contact US</h5>
                 <ul>
                   <li className="list-unstyled mb-2">
-                    <MDBIcon
-                      fab
-                      icon="facebook-f"
-                      className="mr-2 "
-                      size="2x"
-                    />
-                    <a href="https://www.facebook.com/profile.php?id=100015146529072">
-                      Facebook
-                    </a>
-                  </li>
-                  <li className="list-unstyled mb-2 ">
-                    <MDBIcon fab icon="telegram" className="mr-2" size="2x" />
-                    <a href="https://t.me/Yamnoh">telegram</a>
-                  </li>
-                  <li className="list-unstyled mb-2">
-                    <MDBIcon
+                  <MDBIcon
                       fab
                       icon="google-plus"
                       className="mr-2"
@@ -117,10 +102,7 @@ export default class About extends Component {
                     />
                     <a href="https://mail.google.com/">Myoni7634@gmail.com</a>
                   </li>
-                  <li className="list-unstyled mb-2">
-                    <MDBIcon fab icon="github" className="mr-2" size="2x" />
-                    <a href="https://github.com/Mule-Wit/">Github</a>
-                  </li>
+
                 </ul>
               </MDBCol>
             </MDBRow>

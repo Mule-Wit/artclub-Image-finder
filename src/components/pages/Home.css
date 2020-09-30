@@ -26,10 +26,13 @@
 .main h1 {
   position: relative;
   top: 5rem;
+  text-transform: uppercase;
   margin-bottom: 3rem;
   color: #fff;
   text-shadow: 2px 2px 3px rgba(102, 102, 102, 0.596);
   font-size: 2rem;
+  letter-spacing: 3px;
+font-weight: bolder;
 }
 .main {
   background: linear-gradient(
@@ -129,8 +132,62 @@ input[type="text"] {
   filter: grayscale(100%);
   transform: scale(1.1);
 }
-.suggestions MDBBtn{
-
+.suggestions MDBBtn {
   text-align: center;
   width: 100%;
-} 
+}
+.download-btn:active{
+  border: none;
+}
+.download-btn {
+  background: rgb(0, 0, 0);
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 50%;
+  border: none;
+  margin: 1rem;
+}
+.download-btn i {
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+
+}
+
+.gallery {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 33%;
+}
+.gallery img {
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+  margin: 1rem;
+}
+.gallery .animation {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+@media (max-width: 450px) {
+  .gallery {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+  }
+}
+
+.container {
+  margin: 0 auto;
+}
+.img-container{
+margin-bottom: 1rem;
+}

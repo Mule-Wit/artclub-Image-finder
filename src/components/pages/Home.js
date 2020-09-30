@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import "./Home.css";
-import { MDBFooter, MDBContainer, MDBEdgeHeader, MDBBtn } from "mdbreact";
+import {  MDBContainer, MDBEdgeHeader, MDBBtn } from "mdbreact";
 import Display from "./Display";
 import SectionContainer from "../sectionContainer";
 class Home extends Component {
@@ -40,8 +40,8 @@ class Home extends Component {
           array.push({
             id: key + 1,
             by: item.user,
-            tumb: item.previewURL,
-            main: item.webformatURL
+            tumb: item.webformatURL,
+            main: item.largeImageURL
           });
           return true;
         });
@@ -84,7 +84,7 @@ class Home extends Component {
       <div>
         <MDBEdgeHeader className="main">
           <MDBContainer>
-            <h1>Search For Awosem Pictures!! </h1>
+            <h1>Search For Awosem Pictures ! </h1>
 
             <div className="search-form">
               <input
@@ -176,15 +176,7 @@ class Home extends Component {
             <Display images={this.state.images} />
           </MDBContainer>
         </div>
-        <MDBFooter
-          color="aqua-gradient"
-          style={{ position: "fixed", bottom: 0, width: "100%" }}
-        >
-          <p className="footer-copyright mb-0 py-3 text-center">
-            &copy; {new Date().getFullYear()} Copyright:
-            <a href="https://www.ArtClub.Netlify.com"> ArtClub.Netlify.com </a>
-          </p>
-        </MDBFooter>
+     
       </div>
     );
   }

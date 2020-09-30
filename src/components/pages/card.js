@@ -8,16 +8,16 @@ class Card extends Component {
     };
   }
   componentWillMount() {
-    this.setState({ img: this.props.small });
+    this.setState({ img: this.props.large });
   }
   componentDidMount() {
-    this.setState({ img: this.props.large });
+    this.setState({ img: this.props.small });
   }
 
   render(props) {
     const { user } = this.props;
     console.log(user);
-    return <img src={this.state.img} alt={user} />;
+    return <img  src={this.state.img} alt={user} />;
   }
 }
 
