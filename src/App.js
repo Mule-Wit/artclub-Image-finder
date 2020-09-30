@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import {
   MDBCollapse,
   MDBNavLink,
-  MDBIcon,
+
   MDBNavbar,
   MDBNavbarBrand,
   MDBNavbarNav,
@@ -63,8 +63,8 @@ class App extends Component {
                     to="/"
                     onClick={this.closeCollapse("mainNavbarCollapse")}
                   >
-                 
-                    <MDBIcon icon="home" className="mr-1" />
+
+                    <i className="mr-1 ion-ios-home" ></i>
                     <strong>Home</strong>
                   </MDBNavLink>
                 </MDBNavItem>
@@ -77,7 +77,7 @@ class App extends Component {
                     to="/About"
                     onClick={this.closeCollapse("mainNavbarCollapse")}
                   >
-                    <MDBIcon icon="info-circle" className="mr-1" />
+                    <i className="mr-1 mt-5 ion-information-circled" ></i>
                     <strong>About Us</strong>
                   </MDBNavLink>
                 </MDBNavItem>

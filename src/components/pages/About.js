@@ -10,6 +10,9 @@ import {
   MDBEdgeHeader
 } from "mdbreact";
 
+
+
+
 export default class About extends Component {
   render() {
     return (
@@ -17,13 +20,13 @@ export default class About extends Component {
         <MDBEdgeHeader className="sectionPage gradient-1 " />
 
 
-        <div class=" profile-card">
-          <div class="mask-shadow"></div>
+        <div className=" profile-card">
+          <div className="mask-shadow"></div>
           <header>
 
 
             <a href="http://wit-blog.herokuapp.com/">
-              <img alt="mule" src="https://en.gravatar.com/userimage/42992842/b8e8ff24d6f1cb84bbe5c839903086bb.png?size=200" />
+              <img alt="mule" src={require('../../img/profile.png')} />
             </a>
 
 
@@ -34,32 +37,32 @@ export default class About extends Component {
           </header>
 
 
-          <div class="profile-bio">
+          <div className="profile-bio">
 
             <p>"The hardest thing when you think about focusing. You think focusing is about saying "Yes." No. Focusing is about saying "No." And when you say "No," you piss off people."</p>
             <p style={{ fontStyle: "italic" }} >Steve Jobs</p>
           </div>
 
 
-          <ul class="profile-social-links">
+          <ul className="profile-social-links">
 
             <li>
               <a href="https://github.com/Mule-Wit/" target="_blank" rel="noopener noreferrer">
-                <img alt="github" src="https://simpleicons.org/icons/github.svg" />
+                <img alt="github" src={require('../../img/github.svg')}/>
               </a>
             </li>
 
 
             <li>
               <a href="https://www.facebook.com/profile.php?id=100015146529072" target="_blank" rel="noopener noreferrer">
-                <img alt="facebook" src="https://simpleicons.org/icons/facebook.svg" />
+                <img alt="facebook" src={require('../../img/facebook.svg')} />
               </a>
             </li>
 
 
             <li>
               <a href="https://t.me/Yamnoh" target="_blank" rel="noopener noreferrer">
-                <img alt="telegram" src="https://simpleicons.org/icons/telegram.svg" />
+                <img alt="telegram" src={require('../../img/telegram.svg')} />
               </a>
             </li>
 
