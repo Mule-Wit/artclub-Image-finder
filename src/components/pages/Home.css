@@ -109,25 +109,7 @@ input[type="text"] {
   width: 100%;
 }
 
-.Photos {
-  position: relative;
-  width: 100%;
-  margin: auto;
-}
 
-.Photos img {
-  transition: 1s;
-  padding: 15px;
-  width: 100%;
-  height: auto;
-  display: -webkit-flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-self: flex-start;
-  align-items: flex-start;
-  align-content: flex-start;
-}
 .Photos img:hover {
   filter: grayscale(100%);
   transform: scale(1.1);
@@ -195,4 +177,24 @@ margin-bottom: 1rem;
 
   transform: scale(1.05);
   transition: .5s;
+}
+
+.img-container {
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+
+.img-container img {
+  transition: 1s;
+  padding: 15px;
+  width: 100%;
+  height: auto;
+  display: -webkit-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-self: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
 }

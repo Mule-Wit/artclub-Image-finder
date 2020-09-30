@@ -40,8 +40,9 @@ class Home extends Component {
           array.push({
             id: key + 1,
             by: item.user,
-            tumb: item.webformatURL,
-            main: item.largeImageURL
+            tumb: item.previewURL,
+            main: item.largeImageURL,
+            web:item.webformatURL
           });
           return true;
         });

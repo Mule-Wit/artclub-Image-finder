@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { MDBRow, MDBAnimation } from "mdbreact";
+import { MDBRow, MDBAnimation, MDBContainer } from "mdbreact";
 import Card from "./card";
 
 class Display extends Component {
@@ -12,23 +12,27 @@ class Display extends Component {
     if (images) {
       imageListContent = (
         <div className="container">
-          <div className="">
+      
             {images.map((img, key) => (
               // <a href={img.main} data-lightbox="mygallery" data-title={img.by}>
               //    </a>
               <div className="img-container" >
                 <MDBAnimation reveal type="fadeInLeft">
+                <MDBContainer>
                   <Card
                     key={key}
                     small={img.tumb}
                     large={img.main}
+                    web={img.web}
                     user={img.by}
                     id={img.id}
                   />
+                   </MDBContainer>
                 </MDBAnimation>
+                
               </div>
             ))}
-          </div>
+         
         </div>
       );
     } else {

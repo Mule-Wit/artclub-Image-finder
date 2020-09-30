@@ -7,7 +7,6 @@ class Card extends Component {
       img: ""
     };
   }
-
   downloadImage(imageToBeDownloaded) {
     axios({
       url: imageToBeDownloaded,
@@ -23,10 +22,10 @@ class Card extends Component {
     });
   }
   componentWillMount() {
-    this.setState({ img: this.props.large });
+    this.setState({ img: this.props.small });
   }
   componentDidMount() {
-    this.setState({ img: this.props.small });
+    this.setState({ img: this.props.web });
   }
 
   render(props) {
